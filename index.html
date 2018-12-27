@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
           integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="stayle.css">
+    <link rel="stylesheet" href="style/stayle.css">
     <title>Nestoria</title>
 </head>
 <body>
 <nav class="navbar navbar-expand-dark bg-dark">
     <a href="#" class="navbar-brand">
-        <img src="logo.png" alt="">
+        <img src="img/logo.png" alt="">
         The property API
     </a>
 </nav>
@@ -114,7 +114,7 @@
                 <button class="btn btn-outline-success my-2 my-sm-0 col-12" onclick="sortBtn()">Pick up</button>
             </div>
             <div class="col-12 favorites mx-auto">Favorites</div>
-            <div id="favorites"></div>
+            <div id="favorites" class="row"></div>
         </div>
     </div>
     <div class="col-sm-12 col-lg-9 px-0">
@@ -125,15 +125,14 @@
 </div>
 <div id="pagination"></div>
 <div id="elements-deteils">
-    <div class="slider-content">
+    <div class="contentMod">
         <span class="close">&times;</span>
         <div id="content-modal"></div>
         </div>
     <div id="map"></div>
     </div>
-</div>
 </body>
-<script src="script.js"></script>
+<script src="script/script.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAYGyMfTEGyKVrV9mqErtH5l9aV282FSgg&callback=initMap"
         async defer></script>
 </html>
